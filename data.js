@@ -1490,7 +1490,7 @@ window.BENCH = {
   {
    "name": "Claude Haiku 5.5",
    "family": "Anthropic",
-   "access": "Claude Code, xhigh",
+   "access": "Claude Code",
    "tests": {
     "shop": {
      "score": 88.9,
@@ -1619,7 +1619,7 @@ window.BENCH = {
   {
    "name": "Claude Opus 5.5",
    "family": "Anthropic",
-   "access": "Claude Code, xhigh",
+   "access": "Claude Code",
    "tests": {
     "shop": {
      "score": 97.6,
@@ -1705,7 +1705,7 @@ window.BENCH = {
   {
    "name": "Claude Sonnet 5.5",
    "family": "Anthropic",
-   "access": "Claude Code, xhigh",
+   "access": "Claude Code",
    "tests": {
     "shop": {
      "score": 91.8,
