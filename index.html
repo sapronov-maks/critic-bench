@@ -147,6 +147,13 @@ footer { margin-top: 48px; color: var(--ink-3); font-size: 13px; }
   }
   const FIX = { 1: ['●', 'верное исправление'], 0.5: ['◐', 'частичное исправление'], 0: ['○', 'исправления нет или неверное'] };
   const fixMark = (f) => f == null ? ['✓', 'найдено'] : FIX[f];
+  function price(c, kind) {
+    if (kind === 'sub') return '<span class="muted">подписка</span>';
+    if (c == null) return '<span class="muted">—</span>';
+    if (c === 0) return 'бесплатно';
+    const v = c < 0.01 ? '<$0.01' : '$' + c.toFixed(2);
+    return v + (kind === 'cc' ? '<sup title="Claude Code по подписке; по ценам API">¹</sup>' : kind === 'est' ? '<sup title="по токенам и ценам OpenRouter; запускалось бесплатным ключом">²</sup>' : '');
+  }
   const WNAME = { 3: 'серьёзная', 2: 'заметная', 1: 'мелкая' };
   document.getElementById('updated').textContent = '· обновлено ' + D.updated.split('-').reverse().join('.');
 
@@ -199,18 +206,19 @@ footer { margin-top: 48px; color: var(--ink-3); font-size: 13px; }
       «Серьёзные» — сколько серьёзных находок из всех, что нашла хоть одна модель, нашла эта.</p>`));
     const head = `<tr><th class="n">#</th><th class="s" data-col="1">Модель</th><th class="s" data-col="2">Семейство</th>
       ${T.map((t, i) => `<th class="s n" data-col="${3 + i}">${esc(t.title.split(' · ')[0])}<br><span class="muted">${esc(t.title.split(' · ')[1])}</span></th>`).join('')}
-      <th class="s n" data-col="6">Общий</th><th class="s n" data-col="7">Серьёзные</th><th>Доступ</th><th>Пометка</th></tr>`;
+      <th class="s n" data-col="6">Общий</th><th class="s n" data-col="7">Серьёзные</th><th class="s n" data-col="8">≈ Цена</th><th>Доступ</th><th>Пометка</th></tr>`;
     const tb = [];
     let tier = null, n = 0;
     D.models.forEach((m) => {
       const t = m.total == null ? 'вне общего рейтинга' : m.tier;
-      if (t !== tier) { tier = t; tb.push(`<tr class="tierrow"><td colspan="11">${esc(t)}</td></tr>`); }
+      if (t !== tier) { tier = t; tb.push(`<tr class="tierrow"><td colspan="12">${esc(t)}</td></tr>`); }
       if (m.total != null) n++;
       tb.push(`<tr><td class="n muted">${m.total != null ? n : ''}</td><td data-v="${esc(m.name)}"><b>${esc(m.name)}</b></td>
         <td data-v="${esc(m.family)}" class="fam">${esc(m.family)}</td>
         ${T.map((x) => { const s = m.tests[x.id]; return `<td class="score" data-v="${s ? s.score : ''}" style="${s ? heat(s.score) : ''}">${s ? s.score.toFixed(1) : '—'}</td>`; }).join('')}
         <td class="score total" data-v="${m.total ?? ''}" style="${heat(m.total)}">${m.total != null ? m.total.toFixed(1) : '—'}</td>
         <td class="n" data-v="${m.serious[1] ? m.serious[0] / m.serious[1] : ''}">${m.serious[0]} из ${m.serious[1]}</td>
+        <td class="n" data-v="${m.cost ?? ''}">${price(m.cost, m.cost_kind)}</td>
         <td class="small muted">${esc(m.access)}</td>
         <td class="lbl">${m.label ? `<span class="badge">${esc(m.label)}</span>` : ''}${m.note ? ` <span class="small muted">${esc(m.note)}</span>` : ''}</td></tr>`);
     });
@@ -219,6 +227,10 @@ footer { margin-top: 48px; color: var(--ink-3); font-size: 13px; }
     box.appendChild(wrap);
     box.appendChild($(`<p class="small muted">Сортировка — по клику на заголовок (уровни при этом скрываются; вернуть — обновить страницу).
       «Отсеяна тестом 1» — слабый результат на лёгком тесте, на реальный код модель не отправлялась.</p>`));
+    box.appendChild($(`<p class="small muted">≈ Цена — один прогон всех тестов модели (у отсеянных — только теста 1), в долларах по ценам API:
+      фактическая цена OpenRouter; ¹ — Claude Code по подписке, пересчёт самого Claude Code по ценам API;
+      ² — запускалось бесплатным ключом (Mistral, NVIDIA, Groq), посчитано по токенам и ценам OpenRouter.
+      Gemini через веб и Antigravity — подписка Google AI Pro, токенов не видно; для ориентира: Argon через API на тесте 1 стоил ≈ $0.07.</p>`));
     return box;
   }
 
@@ -234,9 +246,10 @@ footer { margin-top: 48px; color: var(--ink-3); font-size: 13px; }
       <td class="score" data-v="${s.score}" style="${heat(s.score)}">${s.score.toFixed(1)}</td>
       <td data-v="${s.score}"><span class="bar" style="width:${Math.max(1, s.score * 1.6)}px"></span></td>
       <td class="n" data-v="${s.serious}">${s.serious} из ${t.serious}</td><td class="n" data-v="${s.found}">${s.found}</td>
-      <td class="n" data-v="${s.penalty}">${s.false ? `${s.false} <span class="muted">(−${s.penalty})</span>` : '0'}</td></tr>`; });
+      <td class="n" data-v="${s.penalty}">${s.false ? `${s.false} <span class="muted">(−${s.penalty})</span>` : '0'}</td>
+      <td class="n" data-v="${s.cost ?? ''}">${price(s.cost, s.cost_kind)}</td></tr>`; });
     const wrap = $(`<div class="wrap"><table><thead><tr><th class="n">#</th><th class="s" data-col="1">Модель</th><th class="s n" data-col="2">Балл</th><th></th>
-      <th class="s n" data-col="4">Серьёзные</th><th class="s n" data-col="5">Реальных</th><th class="s n" data-col="6">Ложных (штраф)</th></tr></thead>
+      <th class="s n" data-col="4">Серьёзные</th><th class="s n" data-col="5">Реальных</th><th class="s n" data-col="6">Ложных (штраф)</th><th class="s n" data-col="7">≈ Цена</th></tr></thead>
       <tbody>${rows.join('')}</tbody></table></div>`);
     sortable(wrap.querySelector('table'));
     box.appendChild(wrap);

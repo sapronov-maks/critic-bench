@@ -1497,26 +1497,34 @@ window.BENCH = {
      "found": 16,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0154,
+     "cost_kind": "cc"
     },
     "fetcher": {
      "score": 46.2,
      "found": 8,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.0426,
+     "cost_kind": "cc"
     },
     "astar": {
      "score": 69.9,
      "found": 11,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.0308,
+     "cost_kind": "cc"
     }
    },
    "label": "",
    "total": 64.2,
    "tier": "лидеры",
+   "cost": 0.089,
+   "cost_kind": "cc",
    "serious": [
     6,
     6
@@ -1532,26 +1540,34 @@ window.BENCH = {
      "found": 15,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": null,
+     "cost_kind": "sub"
     },
     "fetcher": {
      "score": 43.8,
      "found": 12,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": null,
+     "cost_kind": "sub"
     },
     "astar": {
      "score": 70.9,
      "found": 12,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": null,
+     "cost_kind": "sub"
     }
    },
    "label": "",
    "total": 64.1,
    "tier": "лидеры",
+   "cost": null,
+   "cost_kind": "sub",
    "serious": [
     5,
     6
@@ -1567,26 +1583,34 @@ window.BENCH = {
      "found": 16,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0712,
+     "cost_kind": "api"
     },
     "fetcher": {
      "score": 38.5,
      "found": 7,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.1076,
+     "cost_kind": "api"
     },
     "astar": {
      "score": 59.4,
      "found": 8,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.1135,
+     "cost_kind": "api"
     }
    },
    "label": "",
    "total": 57.9,
    "tier": "лидеры",
+   "cost": 0.292,
+   "cost_kind": "api",
    "serious": [
     6,
     6
@@ -1602,26 +1626,34 @@ window.BENCH = {
      "found": 18,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.1741,
+     "cost_kind": "cc"
     },
     "fetcher": {
      "score": 27.1,
      "found": 7,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": 0.8691,
+     "cost_kind": "cc"
     },
     "astar": {
      "score": 66.6,
      "found": 9,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.5688,
+     "cost_kind": "cc"
     }
    },
    "label": "",
    "total": 57.0,
    "tier": "лидеры",
+   "cost": 1.612,
+   "cost_kind": "cc",
    "serious": [
     5,
     6
@@ -1637,26 +1669,34 @@ window.BENCH = {
      "found": 15,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0644,
+     "cost_kind": "api"
     },
     "fetcher": {
      "score": 34.1,
      "found": 5,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.1209,
+     "cost_kind": "api"
     },
     "astar": {
      "score": 61.2,
      "found": 8,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.1408,
+     "cost_kind": "api"
     }
    },
    "label": "",
    "total": 56.4,
    "tier": "лидеры",
+   "cost": 0.326,
+   "cost_kind": "api",
    "serious": [
     6,
     6
@@ -1672,26 +1712,34 @@ window.BENCH = {
      "found": 15,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0919,
+     "cost_kind": "cc"
     },
     "fetcher": {
      "score": 26.3,
      "found": 9,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": 0.4093,
+     "cost_kind": "cc"
     },
     "astar": {
      "score": 62.3,
      "found": 8,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.3338,
+     "cost_kind": "cc"
     }
    },
    "label": "",
    "total": 53.8,
    "tier": "лидеры",
+   "cost": 0.835,
+   "cost_kind": "cc",
    "serious": [
     5,
     6
@@ -1707,26 +1755,34 @@ window.BENCH = {
      "found": 14,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.1184,
+     "cost_kind": "api"
     },
     "fetcher": {
      "score": 46.4,
      "found": 8,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.2868,
+     "cost_kind": "api"
     },
     "astar": {
      "score": 33.8,
      "found": 6,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": 0.413,
+     "cost_kind": "api"
     }
    },
    "label": "",
    "total": 49.1,
    "tier": "сильные",
+   "cost": 0.818,
+   "cost_kind": "api",
    "serious": [
     5,
     6
@@ -1742,26 +1798,34 @@ window.BENCH = {
      "found": 14,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0757,
+     "cost_kind": "api"
     },
     "fetcher": {
      "score": 28.9,
      "found": 5,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.1881,
+     "cost_kind": "api"
     },
     "astar": {
      "score": 51.1,
      "found": 6,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.155,
+     "cost_kind": "api"
     }
    },
    "label": "",
    "total": 48.9,
    "tier": "сильные",
+   "cost": 0.419,
+   "cost_kind": "api",
    "serious": [
     6,
     6
@@ -1777,26 +1841,34 @@ window.BENCH = {
      "found": 15,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0072,
+     "cost_kind": "api"
     },
     "fetcher": {
      "score": 18.5,
      "found": 6,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": 0.0439,
+     "cost_kind": "api"
     },
     "astar": {
      "score": 57.9,
      "found": 8,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.0287,
+     "cost_kind": "api"
     }
    },
    "label": "",
    "total": 47.9,
    "tier": "сильные",
+   "cost": 0.08,
+   "cost_kind": "api",
    "serious": [
     5,
     6
@@ -1812,26 +1884,34 @@ window.BENCH = {
      "found": 13,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.2391,
+     "cost_kind": "api"
     },
     "fetcher": {
      "score": 33.0,
      "found": 7,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.41,
+     "cost_kind": "api"
     },
     "astar": {
      "score": 37.9,
      "found": 7,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": 0.3759,
+     "cost_kind": "api"
     }
    },
    "label": "",
    "total": 45.9,
    "tier": "сильные",
+   "cost": 1.025,
+   "cost_kind": "api",
    "serious": [
     5,
     6
@@ -1847,26 +1927,34 @@ window.BENCH = {
      "found": 18,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0235,
+     "cost_kind": "api"
     },
     "fetcher": {
      "score": 49.4,
      "found": 9,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.0847,
+     "cost_kind": "api"
     },
     "astar": {
      "score": 10.8,
      "found": 2,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": 0.0547,
+     "cost_kind": "api"
     }
    },
    "label": "",
    "total": 43.6,
    "tier": "сильные",
+   "cost": 0.163,
+   "cost_kind": "api",
    "serious": [
     5,
     6
@@ -1882,26 +1970,34 @@ window.BENCH = {
      "found": 14,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": null,
+     "cost_kind": "sub"
     },
     "fetcher": {
      "score": 33.4,
      "found": 4,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": null,
+     "cost_kind": "sub"
     },
     "astar": {
      "score": 28.7,
      "found": 6,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": null,
+     "cost_kind": "sub"
     }
    },
    "label": "",
    "total": 41.8,
    "tier": "сильные",
+   "cost": null,
+   "cost_kind": "sub",
    "serious": [
     5,
     6
@@ -1917,26 +2013,34 @@ window.BENCH = {
      "found": 12,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0082,
+     "cost_kind": "api"
     },
     "fetcher": {
      "score": 14.9,
      "found": 4,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": 0.0207,
+     "cost_kind": "api"
     },
     "astar": {
      "score": 50.2,
      "found": 7,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.0093,
+     "cost_kind": "api"
     }
    },
    "label": "",
    "total": 41.3,
    "tier": "сильные",
+   "cost": 0.038,
+   "cost_kind": "api",
    "serious": [
     5,
     6
@@ -1952,26 +2056,34 @@ window.BENCH = {
      "found": 15,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0321,
+     "cost_kind": "api"
     },
     "fetcher": {
      "score": 34.8,
      "found": 6,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.1514,
+     "cost_kind": "api"
     },
     "astar": {
      "score": 24.0,
      "found": 2,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.0415,
+     "cost_kind": "api"
     }
    },
    "label": "",
    "total": 40.4,
    "tier": "сильные",
+   "cost": 0.225,
+   "cost_kind": "api",
    "serious": [
     6,
     6
@@ -1987,26 +2099,34 @@ window.BENCH = {
      "found": 12,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": null,
+     "cost_kind": "sub"
     },
     "fetcher": {
      "score": 0.1,
      "found": 2,
      "false": 1,
      "penalty": 3,
-     "serious": 0
+     "serious": 0,
+     "cost": null,
+     "cost_kind": "sub"
     },
     "astar": {
      "score": 55.3,
      "found": 8,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": null,
+     "cost_kind": "sub"
     }
    },
    "label": "",
    "total": 37.2,
    "tier": "средние",
+   "cost": null,
+   "cost_kind": "sub",
    "serious": [
     5,
     6
@@ -2022,26 +2142,34 @@ window.BENCH = {
      "found": 15,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0197,
+     "cost_kind": "est"
     },
     "fetcher": {
      "score": 4.2,
      "found": 2,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": 0.0491,
+     "cost_kind": "est"
     },
     "astar": {
      "score": 38.3,
      "found": 6,
      "false": 1,
      "penalty": 1,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.0333,
+     "cost_kind": "est"
     }
    },
    "label": "",
    "total": 33.8,
    "tier": "средние",
+   "cost": 0.102,
+   "cost_kind": "est",
    "serious": [
     5,
     6
@@ -2057,26 +2185,34 @@ window.BENCH = {
      "found": 12,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": null,
+     "cost_kind": "sub"
     },
     "fetcher": {
      "score": 12.5,
      "found": 3,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": null,
+     "cost_kind": "sub"
     },
     "astar": {
      "score": 33.4,
      "found": 7,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": null,
+     "cost_kind": "sub"
     }
    },
    "label": "",
    "total": 33.7,
    "tier": "средние",
+   "cost": null,
+   "cost_kind": "sub",
    "serious": [
     4,
     6
@@ -2092,26 +2228,34 @@ window.BENCH = {
      "found": 13,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0187,
+     "cost_kind": "api"
     },
     "fetcher": {
      "score": 8.7,
      "found": 4,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": 0.048,
+     "cost_kind": "api"
     },
     "astar": {
      "score": 31.3,
      "found": 7,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": 0.0448,
+     "cost_kind": "api"
     }
    },
    "label": "",
    "total": 31.9,
    "tier": "средние",
+   "cost": 0.112,
+   "cost_kind": "api",
    "serious": [
     4,
     6
@@ -2127,26 +2271,34 @@ window.BENCH = {
      "found": 14,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0342,
+     "cost_kind": "api"
     },
     "fetcher": {
      "score": 6.9,
      "found": 3,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": 0.0557,
+     "cost_kind": "api"
     },
     "astar": {
      "score": 18.0,
      "found": 3,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": 0.0472,
+     "cost_kind": "api"
     }
    },
    "label": "",
    "total": 26.2,
    "tier": "слабые",
+   "cost": 0.137,
+   "cost_kind": "api",
    "serious": [
     4,
     6
@@ -2163,26 +2315,34 @@ window.BENCH = {
      "found": 13,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0132,
+     "cost_kind": "est"
     },
     "fetcher": {
      "score": 0.0,
      "found": 2,
      "false": 2,
      "penalty": 12,
-     "serious": 0
+     "serious": 0,
+     "cost": 0.0312,
+     "cost_kind": "est"
     },
     "astar": {
      "score": 27.1,
      "found": 3,
      "false": 0,
      "penalty": 0,
-     "serious": 1
+     "serious": 1,
+     "cost": 0.032,
+     "cost_kind": "est"
     }
    },
    "label": "",
    "total": 25.8,
    "tier": "слабые",
+   "cost": 0.076,
+   "cost_kind": "est",
    "serious": [
     5,
     6
@@ -2198,12 +2358,16 @@ window.BENCH = {
      "found": 15,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.1279,
+     "cost_kind": "api"
     }
    },
    "label": "исключена из-за цены",
    "total": null,
    "tier": "",
+   "cost": 0.128,
+   "cost_kind": "api",
    "serious": [
     4,
     4
@@ -2219,19 +2383,25 @@ window.BENCH = {
      "found": 15,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0378,
+     "cost_kind": "api"
     },
     "fetcher": {
      "score": 14.3,
      "found": 4,
      "false": 0,
      "penalty": 0,
-     "serious": 0
+     "serious": 0,
+     "cost": 0.1854,
+     "cost_kind": "api"
     }
    },
    "label": "тест 3 не прогнан (бюджет)",
    "total": null,
    "tier": "",
+   "cost": 0.223,
+   "cost_kind": "api",
    "serious": [
     4,
     5
@@ -2247,12 +2417,16 @@ window.BENCH = {
      "found": 10,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0055,
+     "cost_kind": "est"
     }
    },
    "label": "отсеяна тестом 1",
    "total": null,
    "tier": "",
+   "cost": 0.005,
+   "cost_kind": "est",
    "serious": [
     4,
     4
@@ -2268,12 +2442,16 @@ window.BENCH = {
      "found": 11,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": null,
+     "cost_kind": "sub"
     }
    },
    "label": "есть модель новее",
    "total": null,
    "tier": "",
+   "cost": null,
+   "cost_kind": "sub",
    "serious": [
     4,
     4
@@ -2289,12 +2467,16 @@ window.BENCH = {
      "found": 9,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0019,
+     "cost_kind": "est"
     }
    },
    "label": "отсеяна тестом 1",
    "total": null,
    "tier": "",
+   "cost": 0.002,
+   "cost_kind": "est",
    "serious": [
     4,
     4
@@ -2310,12 +2492,16 @@ window.BENCH = {
      "found": 9,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0006,
+     "cost_kind": "est"
     }
    },
    "label": "отсеяна тестом 1",
    "total": null,
    "tier": "",
+   "cost": 0.001,
+   "cost_kind": "est",
    "serious": [
     4,
     4
@@ -2331,12 +2517,16 @@ window.BENCH = {
      "found": 8,
      "false": 0,
      "penalty": 0,
-     "serious": 4
+     "serious": 4,
+     "cost": 0.0917,
+     "cost_kind": "api"
     }
    },
    "label": "отсеяна тестом 1",
    "total": null,
    "tier": "",
+   "cost": 0.092,
+   "cost_kind": "api",
    "serious": [
     4,
     4
@@ -2352,12 +2542,16 @@ window.BENCH = {
      "found": 9,
      "false": 1,
      "penalty": 3,
-     "serious": 4
+     "serious": 4,
+     "cost": 0,
+     "cost_kind": "api"
     }
    },
    "label": "отсеяна тестом 1",
    "total": null,
    "tier": "",
+   "cost": 0,
+   "cost_kind": "api",
    "serious": [
     4,
     4
@@ -2373,12 +2567,16 @@ window.BENCH = {
      "found": 9,
      "false": 0,
      "penalty": 0,
-     "serious": 3
+     "serious": 3,
+     "cost": null,
+     "cost_kind": "unknown"
     }
    },
    "label": "отсеяна тестом 1",
    "total": null,
    "tier": "",
+   "cost": null,
+   "cost_kind": "unknown",
    "serious": [
     3,
     4
@@ -2394,12 +2592,16 @@ window.BENCH = {
      "found": 7,
      "false": 0,
      "penalty": 0,
-     "serious": 3
+     "serious": 3,
+     "cost": 0.0144,
+     "cost_kind": "api"
     }
    },
    "label": "отсеяна тестом 1",
    "total": null,
    "tier": "",
+   "cost": 0.014,
+   "cost_kind": "api",
    "serious": [
     3,
     4
@@ -2415,12 +2617,16 @@ window.BENCH = {
      "found": 9,
      "false": 0,
      "penalty": 0,
-     "serious": 3
+     "serious": 3,
+     "cost": 0.0008,
+     "cost_kind": "est"
     }
    },
    "label": "отсеяна тестом 1",
    "total": null,
    "tier": "",
+   "cost": 0.001,
+   "cost_kind": "est",
    "serious": [
     3,
     4
@@ -2436,12 +2642,16 @@ window.BENCH = {
      "found": 6,
      "false": 0,
      "penalty": 0,
-     "serious": 3
+     "serious": 3,
+     "cost": 0.0036,
+     "cost_kind": "est"
     }
    },
    "label": "отсеяна тестом 1",
    "total": null,
    "tier": "",
+   "cost": 0.004,
+   "cost_kind": "est",
    "serious": [
     3,
     4
@@ -2457,12 +2667,16 @@ window.BENCH = {
      "found": 5,
      "false": 0,
      "penalty": 0,
-     "serious": 2
+     "serious": 2,
+     "cost": 0.0013,
+     "cost_kind": "est"
     }
    },
    "label": "отсеяна тестом 1",
    "total": null,
    "tier": "",
+   "cost": 0.001,
+   "cost_kind": "est",
    "serious": [
     2,
     4
@@ -2478,12 +2692,16 @@ window.BENCH = {
      "found": 3,
      "false": 0,
      "penalty": 0,
-     "serious": 2
+     "serious": 2,
+     "cost": 0,
+     "cost_kind": "api"
     }
    },
    "label": "отсеяна тестом 1",
    "total": null,
    "tier": "",
+   "cost": 0,
+   "cost_kind": "api",
    "serious": [
     2,
     4
@@ -2499,12 +2717,16 @@ window.BENCH = {
      "found": 7,
      "false": 1,
      "penalty": 9,
-     "serious": 2
+     "serious": 2,
+     "cost": 0.0006,
+     "cost_kind": "est"
     }
    },
    "label": "отсеяна тестом 1",
    "total": null,
    "tier": "",
+   "cost": 0.001,
+   "cost_kind": "est",
    "serious": [
     2,
     4
@@ -2520,12 +2742,16 @@ window.BENCH = {
      "found": 3,
      "false": 1,
      "penalty": 3,
-     "serious": 0
+     "serious": 0,
+     "cost": null,
+     "cost_kind": "unknown"
     }
    },
    "label": "отсеяна тестом 1",
    "total": null,
    "tier": "",
+   "cost": null,
+   "cost_kind": "unknown",
    "serious": [
     0,
     4
@@ -2541,12 +2767,16 @@ window.BENCH = {
      "found": 5,
      "false": 5,
      "penalty": 45,
-     "serious": 2
+     "serious": 2,
+     "cost": 0.0004,
+     "cost_kind": "est"
     }
    },
    "label": "отсеяна тестом 1",
    "total": null,
    "tier": "",
+   "cost": 0.0,
+   "cost_kind": "est",
    "serious": [
     2,
     4
